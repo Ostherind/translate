@@ -1,0 +1,1377 @@
+# You can place the script of your game in this file.
+
+# Declare images below this line, using the image statement.
+# eg. image eileen happy = "eileen_happy.png"
+## other files
+## characters.rpy
+# The game starts here.
+
+define longdissolve = Dissolve(5.0, "longdissolve")
+define t = Character('test', kind=nvl, color="#c8c8ff")
+
+image studiogame1 = "ingamedemo/accelstudiogame1.png"
+image studiogame2 = "ingamedemo/accelstudiogame2.png"
+image studiogame3 = "ingamedemo/accelstudiogame3.png"
+
+
+
+label start:
+    #jump S1studioQualifier
+    jump comicdemo
+    #jump S3apartmentGame
+
+label comicdemo:
+    
+    scene bg streetside2 with dissolve:
+        align (0, 0)
+        
+    "I check the map on my phone for the second time after reading the sign for a third. This is definitely Stomping Grounds."
+    
+    "A deep breath helps calm my nerves. Seconds later, I push open the glass door and make my way into the unfamiliar room."
+    
+    window hide dissolve
+    
+    scene bg darkpcbang with dissolve:
+        align (0, 0)
+
+    "Pretty much as expected. Computers, vending machines, tables, and the sound of two dozen mice and keyboards. Running a PC bang seems like it might not be such a bad gig. "
+    "As a shiver runs down my back, I realize that the A/C in here is cranked up way too high. I read somewhere that casinos pump in extra oxygen to keep their patrons alert and playing."
+    "Maybe they’ve tried to adapt the same tactic to their cafe? I shake off the chill and step forward."
+    "I smile at a middle aged woman behind the front desk as I pass by her. She glances up at me for a moment before returning her attention to a magazine splayed across her legs."
+    "A quick scan of the heads lined up in front of monitors offers me a few potential Stunts amidst the sea of scrubs. By Accel’s description, he’s young and has bleached hair."
+    "I’m able to narrow it down quickly and find the Stunt with a look at his computer screen. He’s in the middle of ladder match."
+    "… And he’s playing StarCraft with one hand. The other is wrapped around a water bottle from which he takes an occasional drink from. "
+    "He’s winning with some kind of early rush build. And by the look on his face, it’s easy to see that he takes great pleasure in that fact."
+    "His opponent sends a salty one liner before dropping out of the game without a ‘gg’. Stunt grins wide and puts his hands behind his head, satisfied. "
+    "After checking the post-game stats he glances over his shoulder to see me watching, and then spins in his chair to regard me."
+            
+    show stunt phone at center with dissolve
+
+    s "Sup. Something you want?"
+        
+    m "Yeah. You're Stunt, right?"
+
+    s "That's me. And who are you?"
+
+    menu:
+        "Stunt: 'That's me, and who are you?'"
+        "I'm Mach":
+            s "ah that scrub"
+        "I'm not Mach":
+            s "that nerd is a loser"
+
+    show stunt neutral at center with dissolve
+
+    "Stunt’s distracted gaze suddenly lights up. He stands up and plants his hands on his hips all at once."
+
+    s "The foreigner that Accel messaged me about! Was starting to think you wouldn’t show up. Let’s get this betmatch going."
+
+    show stunt neutral grin at center with dissolve
+
+    s "HEY! EVERYON! THE BETMATCH IS ON!."
+        
+    "What."
+
+    "...Dammit Accel."
+
+    "Before I can attempt an explanation, a crowd of six or seven middle school-aged kids begins to form behind Stunt’s PC. I don’t see myself talking my way out of this."
+
+    m "Betmatch. Right. That’s me, yes. That’s what I’m here for."
+
+    "Guy1: “Another chobo is gonna try to betmatch Stunt?”"
+
+    "Guy2: “When will they learn? Stunt is the cafe’s best player! Hey Stunt, will you buy me a juice with your winnings?”"
+    
+    show stunt yell at center with dissolve
+
+    "Stunt ignores the peanut gallery and takes a step forward, sizing me up. Judging by his appearance, there’s no way that he’s out of high school. I’m at least a head taller than him."
+    
+    s "Accel said you were down for a fifteen thousand won bet, but c’mon. You can do better than that, right?"
+
+    m "How much were you thinking?"
+
+    show stunt fist at center with dissolve
+
+    s "Twenty-five thousand is a much better number, wouldn’t you say? C’mon, you had to drag your ass all the way over here to play. Why not make it more interesting?"
+
+    "That’s what, twenty dollars? I’d have to skip a few trips to Go-Mart, but I can’t risk having him turn me down."
+
+    m "Okay, fine. Twenty-five thousand. What are we going to do about maps? And best of three, right?"
+
+    show stunt neutral with dissolve
+
+    s "Nah, best of one is fine. My time’s too valuable. And in a show of good faith, you can pick."
+
+    "Accel wasn’t kidding about the cockiness. Whatever, at least I can pick a map with a long rush distance."
+
+    hide stunt neutral with dissolve
+
+    "I pick a computer nearby, but not so close that we could catch a glimpse at one another’s screens. "
+
+    "A locked window stares back at me as I sit down—of course, I need to pay to use the PC. But before I can head back to the front desk, Stunt slides in front of me and takes the mouse."
+
+    show stunt neutral at center with dissolve
+
+    s "Yo, I got it. Consider it an investment for the money you’re about to give me."
+
+    "He unlocks the machine with a few clicks and the entry of a password. Why would he be paying for two computers? Hm."
+
+    hide stunt neutral with dissolve
+
+    "After I thank him, he slinks back over to his setup. Stunt shares a few confident words with the underage crowd behind him and then throws his headphones on."
+
+    "I host up a game and toss him an invite. It’s not long after that I’m staring down my base and six workers."
+
+    "BATTLE SCENE DOG"
+
+    "Stunt pushes through the dumbfounded crowd and comes stomping over, fury in his eyes. He really didn’t expect to lose."
+
+    show stunt yell at center with dissolve
+
+    s "TWO BUNKERS? BLIND? ARE YOU KIDDING ME?!"
+
+    "I raise my hands defensively and skirt away from the victory screen splashed across my monitor."
+
+    "Woah, woah! Calm down. You have a reputation for those kind of builds, you know."
+
+    "He makes a disgruntled sound and stares hard at me."
+
+    s "You got lucky! And I’m taking—"
+
+    "The shrill voice of the woman at the front desk interrupts Stunt’s ranting."
+
+    "Stunt's Mom: '“What are you yelling back there for? Didn’t I tell you to sweep up the backroom an hour ago? Stop screaming at our customers and go do something useful!'"
+
+    "The woman glares for a moment longer before turning back around the corner. Sheesh, talk about lousy bosses."
+
+    show stunt embarassed at center with dissolve
+
+    "His anger replaced with modesty, Stunt scratches behind his head. The middle-schoolers have mostly dispersed, evidently dejected by the realization that their protoss god can bleed."
+
+    "... Ehh. Sorry. That’s my mom. Anyway, you beat me. Lemme go get your cash."
+
+    "His mom? Egh, even worse. I guess I can see the resemblance. Explains how he unlocked my PC, at least."
+
+    m "Actually, wait. I didn’t come here for a betmatch."
+
+    show stunt surprised at center with dissolve
+
+    s "What? But we literally just played one."
+
+    show stunt neutral at center with dissolve
+
+    "He raises his eyebrow and folds his arms defensively."
+
+    s "... I don’t have to pay you then?"
+
+    m "What? No. I’m recruiting for a new team. Accel mentioned that you’re a free agent, and I wanted to see if you’d join up."
+
+    m "I guess he thought it’d be funny to trick me into a betmatch with you."
+
+    s "A foreign team? Why didn’t you just send me a message or something."
+
+    m "No, a Korean one. And Accel said you’d probably assume I was a fanboy and block me."
+
+    show stunt phone at center with dissolve
+
+    "Stunt pauses and reaches for his phone. Distracted or no, he manages to carry on the conversation."
+
+    "Sounds like something I’d do. Well then, who else have you got?"
+
+    m "We’ve got—"
+
+    "Shit. Jett is technically still on VIP… Can I tell him that she’s planning to leave? What if he tells someone? Why didn’t I think of this ahead of time!?"
+
+    s "You've got...?"
+
+    m "We… have some good players about to sign and a sponsor in the works. Nothing official, we’re trying everything under wraps until then."
+
+    s "Sounds sketchy. A mystery sponsor and mystery players."
+
+    "He doesn’t seem convinced. I can hardly blame him."
+
+    s "But Accel did vouch for you. That’s worth something, I’ll admit. And you beat me."
+
+    m "Once we’ve got four players and some management, we’re going to pick out a team house."
+
+    m "Oh, uh, if your mom will let you move out, that is."
+
+    "He rises to my bait and straightens up, both fists clenched."
+
+    show stunt yell at center with dissolve
+
+    s "You’re damn right she’s going to let me!"
+
+    s "Alright dude, consider me signed. If I got a room and enough money to pay for food, we’re in business."
+
+    "Stunt pauses suddenly and lowers himself from the tips of his toes."
+
+    show stunt neutral at center with dissolve
+
+    s "What’s the team called, by the way?"
+
+    m "Like I said, it’s a work in progress. I’ll let you know when it’s picked out."
+
+    s "If we’re not named yet, I want a say in it. How about ZealZone?"
+
+    "What? How does someone even come up with a name like that?"
+
+    m "Eh. Probably not. We can talk more about this later."
+
+    "While Stunt revels in the afterglow of being signed to an StarCraft team, a thought occurs to me."
+
+    m "Uh, don’t you go to school?"
+
+    show stunt neutral grin at center with dissolve
+
+    s "School is for tools. I’ve got eSports, yo!"
+
+    "I don’t bother trying to divulge more information on his education. If he can live in the team house and perform well, that’s good enough for me."
+
+    "Maybe he’s homeschooled or something. Well, if StarCraft doesn’t work out for him, he’s got a future cleaning up Stomping Grounds."
+
+    show stunt neutral at center with dissolve
+
+    m "Right. The mysteries won’t last for long, I promise. I’ll be in touch if I need you to show up somewhere."
+
+    s "Okay. I’m going to hit you up for practice games tonight, if that’s cool. Be online."
+
+    "Sounds good. Welcome aboard, kid."
+
+    hide stunt neutral with dissolve
+
+    "The fiery protoss player lifts his chin for a final grin before heading into one of the PC bang’s back rooms, no doubt to gather a broom and dustpan at his mother’s behest."
+
+    "I grace Stunt’s mom with an innocent expression on my way out. She returns my smile with a glare sharp enough to make the hair on the back of my neck stand up."
+
+    "I step outside and suck in a deep breath, relieved. The afternoon air is sweet and feels good in my lungs, and the early fall sunshine warms my skin from cafe’s air conditioned chill."
+
+    "One down."
+
+
+
+
+
+
+
+
+
+
+
+    return
+    
+label S1studioQualifier:
+
+    $ renpy.music.set_volume(0.5, .5, channel="sound")
+    play sound "sfx/apmsound.mp3" fadein 5.0
+    play music "sfx/clouded.mp3" fadein 5.0
+    
+    scene bg darkpcbang with dissolve:
+        align (0, 0) 
+    
+    window show dissolve
+
+
+    "My palms are over my eyes. The sweat pouring from them feels like tears on my face." 
+
+    "I recognize him as a pro. I'm nervous as he makes his way to introduce himself."
+
+    show accel neutral as accel at center with dissolve
+
+    show accel neutral white as accel_background behind accel at center:
+        xalign 0.5
+        linear 0.18 xalign 0.52
+
+    a "Hey I know you! You're the foreigner player who just arrived."
+
+    hide accel_background with Dissolve(0.1)
+
+    "I try to keep it cool, but he was my favorite player!"
+    
+    "My mind is a blur, thoughts battering me from all sides. What do I do now? What am I going to tell my parents? Is there anyone looking at me?"
+
+    "There’s a certain feeling you get when you know you’re going to lose a game. Most try to ignore it at first, as if the inevitable is just another challenge to fight through. Like your past mistakes don’t count if you just try a little bit harder."
+
+    "Then, there’s the realization that you can’t win. That you’re about to have to queue up for another ladder game. That he may type ‘get out’ if you stay in the game any longer. That you just flew across the world for nothing."
+
+    "I haven’t met many players that take losing in stride. It’s painful. A mark on your permanent record that says you were worse than someone else. A demonstrable statistic that you are lesser."
+
+    "I’ve spent so much time so practicing, and for what?"
+
+    "I sit at the PC with a blank look in my eye, mindlessly scrolling through posts and comments. Clicks shoot from my mouse like machine gun fire. A tweet mentions my defeat in passing, but no one acknowledges it."
+
+    "I still haven’t accepted my loss. Though I wasn’t even particularly deep into the qualifier, going out 2-0 to a guy I’ve beaten on ladder before is beyond aggravating. My rage eventually fades, leaving me only with a sense of guilt. I should have practiced harder."
+
+    "My miserable trance shatters as I become aware that the next round has begun. I handle my keyboard and mouse with less care than usual, stuffing it deep into my backpack with considerable clatter."
+
+    "When I stand, a wave of relief washes over me when I turn to see that no one had been watching my game. Most of the people in the room are playing, the few that aren’t are crowded behind popular players or are filming the matches from behind. Videos with player APM are still popular, I guess."
+
+    "I think about sticking around to watch more games, but the knot in my stomach persuades me to avoid anymore stress." 
+    "People are nice enough to a foreigner with the heart to attempt a Code A qualifier, but without a win I’m just another in a long line of losers. "
+    "Normally I’d want to say something to the English casters before leaving, but I dread the question: How did your games go?"
+        
+    stop sound
+    
+    $ renpy.music.set_volume(1.0, .5, channel="sound")   
+    window hide dissolve
+
+    jump S2streetApartment
+    
+label S2streetApartment:
+
+    scene bg streetday with dissolve:
+        align (0, 0) 
+    
+    window show dissolve
+
+    "The walk from the studio to my apartment takes only ten minutes or so, though it feels longer with nothing to think about but my loss. I don’t take my from my jean pockets until I’m stepping through the lobby of my apartment building."
+
+    play sound "sfx/footsteps.mp3"
+
+    "The stairwell leading up to the third floor is empty as usual. Dingy tile and low light give the building a seedy look, but I don’t mind. I had to find a room that wasn’t too expensive, and it makes do."
+
+    "I only have one key, so I attached one of those phone straps to the end of my apartment key. I’d have a hard time keeping track of something so dull and colorless otherwise."
+
+    ##AUDIO: doorslarm
+
+    scene bg apartmentday with dissolve:
+        align (0,0)
+
+    play sound "sfx/doorclose.mp3"
+
+    "To say that my apartment is small would be polite. Seoul is an expensive city, and I wanted to be close enough to the VSL studio that traveling wouldn’t be such a chore. Still, it’s decently furnished and I’m happy enough to call it home."
+
+    "I find a seat in my desk chair, stepping over a few dirty clothes on the way over. With the curtains pulled, only the bright light of the LCD screen illuminates the room. I don’t bother signing in to ladder. I know I don’t have the motivation right now to play more than a few games. "
+
+    "Moving to Korea to pursue professional gaming may sound difficult to an outsider, but in reality it was an easy choice. Not because I’m brave, but because there was nothing else for me in the States. After today, I feel even more like I’m running away from my fears, rather than towards my dreams."
+
+    "I had my parents on board with the idea of an eSports career without much resistance. But right about now, I’d bet they’re ready to jump ship. I can hardly blame them. Even the most supportive mothers wince at the idea of their only child spending four months in a foreign country."
+    
+    "Worse still, all I’ve done since I got off the plane is lose."
+
+    "I try to shake the demons out of my head with a clearing thought: 'Just practice.' But in my current state, I feel like doing nothing more than dicking around online. It’s painful to think that I’ve blown a major chance, and I’ve learned the best way to cope is to avoid these thoughts entirely."
+    
+    "An hour later, I’ve read through every thread I’m following and every interesting link is purple."
+
+    m "I could practice…? No, no. I’ll take a nap. That way, when I wake up, I’ll be ready for endless games."
+
+    "Even as I think it, I’m completely aware I’m just kicking the can down the road. It doesn’t make a difference, and the LCD goes off with a click and I slide out of my chair and onto my bed."
+
+    window hide dissolve
+    
+    stop music fadeout 2.0
+
+    ##AUDIO: time passes
+
+    scene bg apartmentnight with dissolve:
+        align(0, 0)
+
+    window show dissolve
+
+    "I wake up with that feeling that I’ve slept for waaaaay too long. It’s got to be at least early evening by now. Damn. I mean, I was up pretty late last night practicing for this morning’s games, but I didn’t think I was that tired."
+    
+    "I bring myself off of my bed with a tussle of my hair and a roll of my shoulder. Like clockwork I pull myself into my computer chair and shake the mouse, waking the computer screen. It’s not long before I’m reminded of my predicament: penniless and bad at Starcraft."
+
+    $ renpy.music.set_volume(1.0, .5, channel="sound")
+    play sound "sfx/countdown.mp3" 
+
+    "Despite my pessimistic outlook, I manage to find the motivation to click 'find match.' I’m refreshed and have nothing to lose. Well, nothing but ladder points."
+
+
+
+    window hide dissolve
+
+    jump S3apartmentGame
+
+label S3apartmentGame:
+
+
+    window show dissolve
+    scene apartmentgame1 with dissolve:
+        align(0,0)
+
+    play music "sfx/terran2.mp3" fadein 2.0    
+    "A protoss. Awesome. I know just the build. Just need to make sure I properly scout out any shenanigans." 
+
+    scene apartmentgame2 with dissolve:
+        align(0,0)
+    "I should have been holding the watchtowers. Warp prism? Already? Shit, wait, where’s his third?"
+
+    "This isn't good, his zealots are getting into my mineral line."
+
+    "He's moving out to attack too."
+
+    "I have to deal his army now."
+
+    scene apartmentgame3 with dissolve:
+        align(0,0)
+
+    "I should be able to hold this, right?"
+
+    play sound "sfx/apartmentlose.ogg" 
+
+    "The tanks are in a terrible position. I think I have enough damage here."
+
+    "My army is diminishing too fast, I can't reinforce fast quickly enough."
+
+    "Damn. Ahh. Shit. SHIT!"
+
+    window hide dissolve
+
+    ##AUDIO: slam first
+    stop sound
+    stop music fadeout 1.0
+    play sound "sfx/deskslam.mp3"
+
+    scene bg apartmentnight:
+        align(0,0)
+    window show dissolve
+    "I slam my fist on the desk, causing the monitor to shake and a few plastic bottles to topple over. My face rests in my hand as I send myself into the replay with a flurry of clicks."
+    play music "sfx/reggae.mp3" fadein 1.0
+
+    "I calm down with a measured breath, reminding myself that it’s just one game. People think that losing a ladder game stops bugging you once you’re high Grandmaster. Hell, maybe it shouldn’t, but it still bothers me."
+
+    "My mistakes seem obvious in retrospect, but the combination of his scout denial and some bad control during the final fight gave my opponent the edge." 
+     
+    "I toy with the conclusion that the other guy was hacking, but I realize I’m just making excuses at this point. No, I should have been able to win that one."
+    
+    "The events earlier today do little to help me feel better about losing like a scrub on ladder. I look around my tiny room, restless and unmotivated."
+    
+    m "I’ve got to get out of here..."
+    
+    "I do a fair amount of walking, either when I’m going to get food or if I feel like heading to the VSL studio to watch a match. Still, it’s incredibly depressing to sit alone for extended periods of time in a dark room." 
+
+    "I probably manage it a lot better than the average person, but I have always actively tried to take breaks when I think another person just wouldn’t be able to handle the loneliness anymore."
+    
+    "With a few keystrokes I lock the computer, turn off the monitor and throw on a pair of unwashed jeans and one of the few clean t-shirts I have remaining." 
+    
+    "I told myself I didn’t need to bring too many clothes because I’d pick up some clothes from a Korean store and dress in the local fashion. Yeah, that never happened."
+    
+    window hide dissolve
+
+    scene bg streetnight with dissolve:
+        align(0, 0)
+
+    window show dissolve
+
+    play sound "sfx/footsteps.mp3"
+
+    "I hustle down the stairs after ensuring that my door is locked. The evening light fades with every step I take, and the streets are as lively as ever. I trod along the concrete path, allowing my mind to wander the same as my feet."
+    
+    "The sights of Seoul are as foreign as they were when I arrived last month. It isn’t quite the high-tech, urban paradise that I had imagined, but it’s still a pretty amazing place to live."
+    
+    "Catchy pop music blasts from half the stores I pass, and signs plaster every shop window with perfect-looking models. Seoul Tower looms over the entire city from a distant hilltop."
+    
+    "I think of my parents, my friends back home, my old high school, where I’d be right now if it weren’t for Starcraft. Would I be in college? Maybe I’d be working. Even now, on a day as bad as this one, I don’t regret taking up Starcraft. "
+    
+    "Yeah, I’m not doing so great and yeah, I’m not building towards anything that’ll get me a job one day. But I enjoy the game and I’ve made a lot of friends through Starcraft. "
+    
+    "The move east though? That… Well. that’s to be decided."
+    
+    "I'm tired of losing for no one's sake but my own. My fist tightens as my resolve to improve grows."
+    
+    jump S5goldenZonefire
+    
+label S5goldenZonefire:
+    
+    "I’ve wandered so far that a walk back to my apartment would take almost a half hour. By now, the sun has set and the street is illuminated by an arrangement of blinding neon."
+    "My renewed drive to practice my craft drives me in search of a place to play. Given that this is Seoul, it’s not long before I see the words I’m looking for: PC Bang."
+    "Given the amount of decoration and foot traffic in front of the tall, typical Seoul-sized building, the cafe looks pretty popular. Judging by the sign on the front, it’s called Golden Zonefire… "
+    "PC Bang culture is one of the things that interested me most about esports when I first got into Starcraft. "
+    "The idea of a bunch of guys and girls duking it out to be crowned champ of a given cafe sounds old school cool. Like some sort of western where a sheriff has to defend his turf against would-be upstarts."
+    "I’ll admit, I’ve daydreamed about being born ten years earlier and playing learning Brood War instead of SC2. A better time… Or so they say online."
+    stop music fadeout 5.0
+    window hide dissolve
+
+    scene bg pcbang with dissolve:
+        align(0, 0)
+
+    window show dissolve
+
+
+
+    play sound "sfx/footsteps.mp3"
+    play sound "sfx/apmsound.mp3" fadein 10.0
+
+    "As I pass through the doorway and trundle up the stairs, I’m struck by the size of this place. There has to be at least a hundred computers. "
+    
+    play music "sfx/bluepine.mp3" fadein 1.0
+
+    
+    "Colorful lighting and furniture, posters, and the glow of LCD monitors overwhelm my vision. It’s packed like a church on Sunday morning. "
+    "It seems way too crowded for an ordinary evening. There’s more people than there are PCs, even."
+    "I try to find out what’s going on from the first person I see: A dark-haired guy observing a match of SC2 over someone’s shoulder."
+    m "Excuse me, is there an event going on?"
+
+    show rival neutral at center with dissolve
+
+    "The guy turns looks at me like I’m speaking another language. I’m not, for the record. His face contorts briefly, but he quickly resumes his neutral glare."
+    unknown "Are you new here or something? How can you not have heard of All Out Attack?" 
+
+    m "Yeah, I am new. Just asking."
+
+    "He shifts his eyes away from me, aware that he probably sounded like a bit of an ass. He doesn’t apologize, but he does fill me in a bit further,"
+    unknown "Golden Zonefire hosts All Out Attack every other Friday. There’s a big prize for first place. Cafe owners are new school Starcraft fans. It’s how this place got big."
+
+    "He seems upset by the circumstances relayed to me, though I don’t press him on it."
+    m "I see. Thanks. Are you here cheering for someone?"
+
+    hide rival neutral with dissolve
+    "With a disgusted shake of his head the mysterious looking guy sulks away, mumbling something about foreigners. The back of his shirt sports a KeSPA team’s logo. Maybe he’s a Brood War elitist?"
+    "Well, I came here to practice, and now I’m presented with the chance to play some good players. I’m probably not the only foreigner to have ever been in this particular PC Bang, but I still draw some odd stares when I go to put my name on the list to sign up. "
+    "Most foreigners that come to Korea to play Starcraft already have some results and are therefore known of. It’s likely that the people here think I’m just a tourist in over my head or something. Here’s hoping I can prove them wrong."
+    "I settle for a computer off to the side of the room that has a very similar mouse and the same mechanical switches as my setup back home. Only two dozen or so people signed up, so a few of the better players got byes."
+    "I shake out the LAN jitters with a micro tester and join my first opponent’s lobby a few minutes later."
+    "I haven’t heard of the guy, so I check his profile to see he’s about mid-masters. It relaxes me somewhat that I won’t get knocked out first round. Or so I hope. "
+    "The first round is Bo1, likely to weed out some of the scrubs and keep the tournament going at a good pace. The guy seems energetic enough by the amount of numbers he’s spamming in the pre-game lobby, and the game gets underway once we’re both ready."
+    stop music fadeout 5.0
+    window hide dissolve
+
+    jump S6goldenZonefireGame
+
+label S6goldenZonefireGame:
+    
+    scene tourneyzerg1 with dissolve:
+        align(0,0)
+    play music "sfx/terran2.mp3" fadein 2.0
+    window show dissolve
+    
+    "He’s zerg, alright. I’ll put on some pressure."
+    "Scouted him out, he's not doing anything out of the ordinary. Looks like he made a few errors with his build order."
+    "I’ll just stick to the plan. Hellions will throw him off even more."
+
+    scene tourneyzerg2 with dissolve:
+        align(0,0)
+
+    "There’s the expansion. Killed a decent amount, but I also kept the hellions alive. Oh yeah, caught some lings! "
+    "Hah, this guy is getting smoked."
+
+    scene tourneyzerg3 with dissolve:
+        align(0,0)
+    play sound "sfx/winningzerg.ogg"
+    "I feel confident I’m about to win the game with my next push. My decisions flow from without doubt, and my hand reacts with precision. The final fight is incredibly one-sided and he offers a gg with his army in pieces."
+    "As soon as the victory screen displays, anxiety floods out of my body. Starcraft is a tense game, even the smallest mistake can wind up losing you the game. There truly is never a moment to relax until the game is over."
+    
+    window hide dissolve
+
+    jump S7meetAccel
+
+label S7meetAccel:
+    stop sound
+    stop music fadeout 5.0
+    window show dissolve
+
+    scene bg pcbang with dissolve:
+        align(0,0)
+
+    play music "sfx/bluepine.mp3" fadein 1.0
+    
+    "Bristling with confidence, I get up to check my next opponent... and... it’s... Accel...."
+
+    "I draw my lips in a line and let my shoulders slouch. Welp, that's the end of this tournament run." 
+
+    "Accel is a player I really loved to watch about a year ago. Recently, though, I’ve been more interested in more cutting edge terrans... but I mean, he’s definitely still a good player. And probably about to beat me."
+
+    "While I’m still debating what sort of cheese I should do to try to sneak a win, I feel a hand on my shoulder. I look behind my chair to see none other than the man himself standing there with a wide grin."
+     
+    show accel neutral at center with dissolve
+
+    a "Woah, hey! I haven’t seen a foreigner compete here before! Who are you?"
+
+    "Though he shoots straight to the point, there’s something charming about the way he asked. I’m not nervous around famous players, luckily, and I don’t stammer or stutter in my response."
+
+    m "I’m Mach, a terran. I think we play next round."
+
+    a "Yeah, I saw you won your game. Not bad!" 
+
+    m "Thanks. He wasn’t great or anything, but at least I got to warm up, right?"
+
+    "He laughs, as do I. It’s nice to see that a player I look up to is so friendly."
+    a "It’s not so common to see a white guy here. At least a player. Are you on a team?"
+
+    m "Eh.. I’m not. Trying to find one, though. Heh."
+
+    "I grin stupidly, but he doesn’t seem to mind. Accel scratches his chin ponderously for a moment before responding."
+    a "Anyway, good luck! I won’t go easy on you. Let’s see how you do~." 
+
+    hide accel neutral with dissolve
+
+    "He waves his hand in a flourish as a goodbye and returns to his PC." 
+
+    "A nice surprise to see that Accel is so friendly. Well, maybe not a surprise, as he’s always seemed pretty easy-going on streams or whatever. He had an easy time understanding my Korean, too."
+    "A large amount of the stress I was feeling from before is gone, and I feel comfortable going into the game. If I lose, big deal. I’m expected to lose. If I win, I beat Accel! "
+    "Still, I’m chewing over a couple of cheese builds before I finally just decide to play standard. Why not? It’s a good chance to practice against a top terran. "
+    "We join the lobby and his pre-game chat is littered with tildes. We banter back and forth for a bit before the game finally begins."
+
+    stop music fadeout 5.0
+    window hide dissolve
+
+    jump S8accelGame
+    
+label S8accelGame:
+    scene tvtaccel1 with dissolve:
+        align(0,0)
+    play music "sfx/terran2.mp3" fadein 2.0
+    window show dissolve
+
+    "I'm normally a fan of Terran vs Terran matchups, but Accel is known for his mirror matches."
+
+    "He's always one step ahead of his opponents. He even snagged the red color before me in the lobby."
+
+    "I'll keep playing conservative and go for some early Banshee harassment."
+
+    scene tvtaccel2 with dissolve:
+        align(0,0)
+
+    "It's working, he has to have less workers than me by now."
+
+    "I have the economic advantage.  I didn't scout an expansion."
+
+    "I just have to attack."
+
+    scene tvtaccel3 with dissolve:
+        align(0,0)
+
+    "Wait, where is his army?"
+
+    "This is too easy, something's up."
+
+    "Oh no..."
+
+    "His army is already at my base, and it's huge. How??"
+
+    "He's forcing a basetrade scenario, and he has the advantage."
+
+
+    scene tvtaccel4 with dissolve:
+        align(0,0)
+
+    "He managed to hold off my attack."
+
+    "This isn't good."
+
+    "I can't reinforce, he's destroying all my production buildings at home."
+
+    "He held off with just his SCV's and straggling marines, I'm getting outplayed!"
+
+    play sound "sfx/loseaccel.ogg"
+
+    scene tvtaccel5 with dissolve:
+        align(0,0)
+
+    "Oh god, he managed to stabilize, and my base is in shambles."
+
+    "There's no coming back from this."
+
+    "He managed to turn this game around with a high stakes play."
+
+    "He doesn't have much of a base left either, but he still has his army laying ruin to my base."
+
+    "It's over...gg"
+
+    "I didn’t exactly throw the game, but I did get seriously outplayed."
+    "I don’t overstay my welcome after my tank count drops, and the game ends with a quick f10+n. "
+
+
+    window hide dissolve
+    
+    jump S9meetJett
+
+label S9meetJett:
+    stop sound
+
+    stop music fadeout 5.0
+
+    play music "sfx/bluepine.mp3" fadein 1.0
+
+    scene bg pcbang with dissolve:
+        align(0,0)
+    window show dissolve
+
+    "I rub my forehead in frustration, fantasizing about how a victory would have felt right now. "
+    "Not a moment later, though, does Accel come peeling around the corner with a smile and raised eyebrows,"
+    
+    show accel neutral at center with dissolve
+
+    a "Hey, you’re pretty good! I thought you were like, here just for fun or something."
+
+    m "Well, uhh, thanks. I am here for fun though. You play really well."
+
+    "I’ve never been much of a BMer, but I do find it hard to pay compliments to my opponents when I lose. Accel is just too good not to praise, though. He laughs and waves off my compliment, "
+    a "I’m surprised, most foreigners don’t defend drops like that. You’re really not on a team? Are you at least staying at a team house? Oh, oh~! Are you studying abroad?"
+
+    m "Nope. I’m staying by myself in an apartment by the VSL studios."
+
+    "Accel seems perplexed. With both hands on his hips he tilts his head, jutting his bottom lip out."
+    a "So you’re saying you came to Korea alone? With your own money? Aaaaand you’re not just visiting?"
+
+    m "Err... Yes." 
+
+    "I do my best not to seem awkward about my answer, but to my surprise Accel smiles."
+    a "Wow! It takes some serious guts to move out here like that. Not many people have made it alone, you know." 
+
+    "I can tell that he’s sizing me up. I’ve surprised him in a good way, or at least I think so. He seems to be lost in thought, chewing his lip absently and playing with the strings of his hoodie."
+    "A few nearby pro-gamers and fans have been silently observing our conversation. It’s not all that often that Accel gives his attention to some random nobody he crushes early in a bracket, much less so when that person is a foreigner. "
+    "Finally, Accel speaks up."
+
+    show accel laughing at center with dissolve
+    
+    hide accel neutral with dissolve
+
+    a "Hey, let me introduce you to a friend of mine. Maybe later I can find you a practice partner or two, eh, eh?" 
+
+    "He winks. Part of me wants to wink back, but I realize that’d probably be weird."
+
+    hide accel laughing with dissolve
+    "Accel leads me past the area where the PCs are to a small lounge. A surprising amount of recognizable players are hanging out like they’re no different from the other cafe patrons."
+    "I guess even the professionals like to kick back with the tangle of ethernet cords and rush of caffeine every now and then. Games shouldn’t have to be all business all the time... Although, I’d bet you’d find KeSPA officials disagree with that sentiment."
+    "He comes to a stop at a quiet corner away from the constant click of keyboards. Accel plops himself into a seat against a wall, inviting me to join him with a flourish of his hand."
+    "As I take my seat, I look up to find someone other than Accel across from me-- a face I know well."
+
+    show accel neutral at left with easeinleft
+
+    show jett angry at right with easeinright
+    "Jett. She’s a zerg and a former champion. She won the very first VSL back when Starcraft 2 was in beta. A scowl rests on her lips as she glances past me to Accel."
+    j "Who’s the foreigner? Never seen him before. He didn’t beat you, did he?"
+
+    j "No, he didn’t win. But it was close~."
+
+    "The two begin to banter, and even after a while I still haven’t said anything. It dawns on me that I probably look like a starstruck tourist. I force myself to choke out an introduction."
+    m "Eh, hi. I’m Mach. Terran. I’m on… Uhh... Well, I’m teamless."
+
+    "Jett shifts her prying gaze from me to Accel as if to ask ‘why’d you bring this noob back here?’ Before she can actually say anything, though, Accel rushes to my defense."
+    a "Hey, easy on the judgement! You haven’t seen him play yet, have you? He’s really good! Plus, you ever hear of a foreigner that came out to Korea alone? I mean, come on! I think it’s cool."
+
+    "If that endorsement wasn’t convincing enough, he offers one of his classic cheesy grins and thumbs-up for good measure. She seems satisfied with Accel’s assessment. For now."
+    j "How do you live out here with no team? Do you stream or something?"
+
+    m "Well, I do stream, but I’m not partnered. My following is pretty small."
+
+    "Small doesn’t even begin to describe it. My fanclub thread on Teamliquid barely has two pages."
+    j "So your parents pay for everything?"
+
+    m "Some stuff, I guess. But I have savings and I live inexpensively. I guess the plan is the pay them back, you know?"
+
+    j "Hm. That’s pretty lucky. I had to earn my place as a professional gamer. Didn’t get any handouts."
+
+    "This isn’t going very well. Coming back here might have been a mistake. Still, though, Accel looks a collected as every, lazily rolling a strand of his hair between two fingers."
+    "Suddenly, Jett shifts up in her seat in realization."
+    j "Wait. Mach? I do know you! You won an online cup or something, right? A week or so back?"
+
+    m "Uh, yeah! I did! You weren’t playing, though. How’d you know?"
+
+    j "Hah. One of my teammates was complaining about losing to you, going on and on about how you were coinflipping or something."
+
+    "She notices the worried look on my face."
+    j "Don’t worry, you’re fine. He’s a bad loser."
+
+    "She laughs, a confident and boisterous sound. Once she regains herself, the interrogation continues."
+    j "Did you play Brood War?"
+
+    m "Not really, I mean, I had a copy as a kid. I wasn’t very good. Had to cheat to finish the campaign, heh."
+
+    j "So then this is your first try at professional gaming?"
+
+    m "Yeah."
+
+    j "Everyone that makes it to grandmaster and gets a ladder win on a good player thinks they’re a progamer these days. You don’t wanna be that guy, hear me?"
+
+    a "Ehh, hey~. Don’t be so harsh~! He has a solid style, and he kept up with my macro! You know, I think with some practice, he could be good. Like, really good!"
+
+    "It seems that Accel is finally getting to the point. Jett turns away from Accel, if only for a moment, to consider the possibility."
+    a "What do you think? Why don’t you guys practice?"
+
+    j "I could. There’s no harm in giving him a chance."
+
+    "Accel looks pleased. I probably look relieved. Jett takes the moment to stretch out before again crossing her hands across her chest."
+    j "We’ll practice with you, but only if you can hold up to the challenge. If I’m not learning anything, I can’t afford to waste my time. I’ve got my sights on another championship to win, you know."
+
+    a "It takes some determination to come out here alone, no one is going to deny that. We’ll see if that determination translates to skill, eh?"
+
+    "With a nod, it’s settled. I have somehow found myself with two of the best possible practice partners in the world. I really hope this isn’t just for the novelty of playing with a random foreigner."
+    m "I don’t know what to say… I mean, yes. I definitely say yes. I would really, really like to practice with you two. And who knows? Maybe you’ll learn to defend against secret foreign terran builds."
+
+    "My joke nets a bit of laughter from the two, easing me from an astonished observer to a participant in a dream scenario. This isn’t going to be easy."
+    "It’s not long before the next round of the tournament is set to begin. The bracket will probably take another few hours to work through, and a PC Bang with the bustle of a tournament probably isn’t the best training environment."
+    m "Listen guys, I’m gonna head home. I’ve got a lot of practicing to do now."
+
+    a "Aww, leaving already? Well, hey, it was nice to meet you Mach. We’ll see how good you are tomorrow."
+
+    j "Guess we’ll find out if you’re overhyped! Hope you can stand up to the challenge."
+
+    m "Thank you guys, really. I won’t let you down."
+
+    "And with that, I depart with a wave and a smile. Golden Zonefire is as packed as ever, and as I manage to squeeze through the door leading outside, I’m met with a cool breeze and a rush voices, sounds and lights."
+    scene bg streetnight with dissolve:
+        align(0, 0)
+    "It’s funny to think how quickly things can change. This morning I felt trapped, condemned to a life of mediocrity."
+    "I quicken my pace, eager for the comfort of a dark room and bright monitor."
+    "Time to hit the ladder."
+
+    window hide dissolve
+
+    stop music fadeout 5.0
+    
+    jump S10zonefireJett
+    
+label S10zonefireJett:
+
+    play music "sfx/slip stream.mp3" fadein 5.0
+
+    scene bg pcbang with blinds:
+        align(0,0)
+
+    window show dissolve
+    
+    "True to her word, I received a message this morning from Jett telling me to get over to Golden Zonefire for some matches."     
+
+    "I enjoy practicing online and all, but there's something refreshing about playing games against someone you're only a few feet away from. SC2 may not have LAN, but being able to talk over your games in person makes things a bit easier."
+
+    "The sting of getting knocked out early on during the last solo league qualifier is still fresh in my mind. It’s a bruise that won’t fade for some time. But it helps to motivate me, if nothing else."
+
+
+    "I catch sight of Jett sitting alone in one of the cafe's quiet corners. It looks like she’s in the middle of a ladder game. I set my bag in a chair next to her and watch the match unfold from behind."    
+
+    window hide dissolve 
+
+    ##game bg
+
+    scene jettzerg with dissolve:
+        align (0,0)
+
+    window show dissolve
+
+    "Jett's rapid-fire fingers rattle the keyboard with a flurry of taps and clicks. She's ahead, though not by much. Her focus never drops from the game, much less her monitor."
+
+    scene jettwin with dissolve:
+        align (0,0)
+    play sound "sfx/jettzergplay.ogg" fadeout 2.0
+    "She extends her lead into the late game and, a few minutes later, heaves a sigh of relief when the opponent ragequits out. I don't need to consult my mediocre Korean skills to read what he had typed: zerg imba."
+    stop sound fadeout 1.0
+    "With her game complete, she turns to regard me with a quick smile, screen left to display her victory proudly"
+
+    ##baneling bust scene
+
+    window hide dissolve
+
+    scene bg pcbang with blinds:
+        align(0,0)
+
+    window show dissolve
+
+    show jett neutral at center with dissolve
+
+    j "Hey! You actually showed up. Is it bad if I thought you were going to flake?"
+    
+    "She grins wide in a near-predatory expression. My initial impression from watching Jett on streams and during tournaments wasn't too far off. She's fierce and competitive-- but easy to get along with all the same. Mostly."
+    
+    m "Could you blame me if I did? Who wants to walk for fifteen minutes just to beat up on some scrub for a few hours."
+    
+    "The smile breaks into a laugh. It's good to know that even if I’m just some no-name foreigner, I can manage a joke."
+    
+    hide jett neutral at center
+
+    hide window dissolve
+
+    scene jettwalloff with dissolve:
+        align(0,0)
+
+    window show dissolve
+
+    "Before long we're grinding out games. Lucky for me, Jett is really good about pointing out my mistakes. She isn't afraid to hurt my feelings with a blatant piece of advice, especially if it's something I need to hear."
+
+    show jett angry at right with easeinright
+
+    j "Your wall at the front is total garbage. How the hell have you gotten away with something so sloppy?"
+    
+    m "It's not something I really think about that much. I just sort of put it up, you know?"
+    
+    j "Fix it, or I'm going to punish your carelessness."
+
+    hide jett with dissolve
+    
+    "It probably isn’t an idle threat. Jett is the type of player that’s capable of ending the game instantly if she can capitalize on a major mistake by her opponent."
+    
+    "That said, sometimes it’s better to let the game to drag out late. The early moments in a game of Starcraft are often the most volatile-- late game tends to favor players with the most mechanical skill."
+    
+    scene jettbaneling with dissolve:
+        align(0,0)
+
+    play sound "sfx/jettbanelingbust.ogg"    
+
+    "... Not this time, apparently. Jett’s banelings stream up my ramp and crush my wall, as promised."
+    
+    "That’s a mistake I won’t be making again."
+
+    window hide dissolve
+
+    jump S11zonefireRival
+
+label S11zonefireRival:
+
+    scene bg pcbang with dissolve:
+        align (0,0)
+
+    window show dissolve
+
+    stop music fadeout 1.0
+    
+    play music "sfx/Eighty.mp3" fadein 2.0
+
+    "Just before we get into another game, a familiar looking guy walks through the doorway and up to the counter."
+     
+    "If I recall correctly, he was the person I asked about the tournament the night that I first came to Golden Zonefire."
+    
+    "With his time in the cafe paid, he makes to find a seat on the other side of the room."
+    
+    m "Hey Jett. Do you know who that is?"
+    
+    "I thumb in his direction. He's already got his mouse and keyboard set up and is getting into the SC2 client."
+ 
+    show jett angry at center with dissolve
+
+    j "He’s a KeSPA player. Protoss. What about him? C’mon, get into the game already."
+    
+    m "A KeSPA player? Seriously?"
+        
+    j "Surprised? They’re figuratively chained to their team house desks, not literally. Not all of them are shut-ins."
+    
+    "Funnily enough, being a team house shut-in is what I've been aiming for since I got to Korea."
+    
+    m "I think I'll ask him for a game."
+    
+    j "... Hold on, what? Wait, you can't just--"
+
+    hide jett with dissolve
+    
+    "Before she can protest further, I make my way across the cafe. Jett shoots me a glare over the rows of computer setups, but I return it with only a shrug."
+    
+    "Even though I’ve barely interacted with the guy, I can’t help but feel a little anxious as I make my way to his PC. Sure, he was a bit rude to bit the other day, but the chance to face a KeSPA pro is too good to pass up."
+ 
+    "He’s about to jump into a ladder game when I tap him on the shoulder. Nonplussed, he turns to regard me through half-lidded eyes."
+    
+    show rival neutral at center with easeinright
+    
+    unknown "What?"
+    
+    m "Excuse me. Would you mind a practice game? I’ve seen you around, heard you were kind of good."
+    
+    unknown "Uh… No. Sorry. I’m just here to play..."
+    
+    "He pauses. Recognition flits across his face."
+    
+    unknown "Wait a second. You’re that foreigner from the other day, yeah?"
+    
+    "I grin sheepishly. His only reaction is to stare on."
+    
+    m "Yeah, that’s me."
+
+    "He looks ready to dismiss me and get back to his ladder game-- but at the last moment, he finds a confident grin and nods."    
+    unknown "... Starcraft 2, yeah? Alright. one game."
+
+    hide rival neutral with dissolve
+    
+    "I nod and find my way into a chair nearby and begin to set up my station. A moment later, we’re sitting in the game lobby ready to begin."
+
+    "He's playing on an anonymous barcode account, typical. How have I still not managed to catch this guy’s name?"
+
+    "A sharp tap on my shoulder announces Jett’s arrival. She looks extremely displeased to have found herself in this situation."
+    
+    show jett angry at center with easeinright
+
+    j "You're an idiot, just so you know. Remember what you practiced and don't try anything out of the ordinary."
+    
+    "Anything else Jett has to say is drowned out along with the rest of the sounds from the PC Cafe as I pull my headphones over my ears."
+
+    hide jett with dissolve
+
+    window hide dissolve
+    
+    jump S12zonefireGame
+
+label S12zonefireGame:
+
+    scene rivalopening with dissolve: 
+        align (0,0)
+
+
+    stop music fadeout 1.0
+    
+    play music "sfx/terran3.mp3" 
+
+    window show dissolve
+    
+    "As the countdown finishes and we head into the loading screen, my mind is racing with potential build orders. I can’t lose."
+ 
+    "I think back to what Jett told me-- stick to what I’ve practiced, macro up, and play standard."
+    
+    "Still the temptation to all-in is always there. I could grab a quick win on a KeSPA player..."
+
+    window hide dissolve
+    
+    call screen rival_opening
+    
+    $ result = _return
+    
+    if result == "standard":
+        jump standardPlay
+    elif result == "cheese":
+        jump loseAllIn
+
+label standardPlay:
+
+    window show dissolve
+    
+    "I stick to Jett's advice-- play standard, stick with what I know, and aim for a longer game."
+    
+    "I take my natural expansion and begin teching up.  The match progresses quietly with only a few brief skirmishes with his stalkers and my marines."
+    
+    "My scouts show he's not doing anything out of the ordinary. One of us has to make a move sooner or later. It’s important to control the pace of a match."
+    
+    "I start building my starport, and my bio upgrades are underway. Now seems like a good time to go for some drop play and try to snipe some of his critical tech buildings."
+    
+    "If I were to play an aggressive drop style, I need to be confident in my control and the fact that I can out play him."
+    
+    "On the other hand, this game has been exceptionally quiet.  If I could get up an expansion this early, I’ll have a serious advantage going into the late game."
+    
+    "If I take the fast expansion, my army production would be temporarily stifled and my bases would be open to harassment."
+
+    window hide dissolve
+    
+    call screen rival_mid
+    
+    $ result = _return
+    
+    if result == "expand":
+        jump loseFastThird
+    elif result == "drop":
+        jump winDropPlay
+        
+label loseAllIn:
+    
+    scene rival2rax with dissolve:
+        align(0,0)
+
+    window show dissolve
+
+    "Screw it, I'm going to cheese."
+    
+    "I place two really early barracks mid-map, just outside his scouting path.  It’s extremely unlikely he’ll see my strategy until it’s coming at him."
+    
+    "I save up my marine count, nerves growing as my anticipation grows. He still hasn’t managed to scout my all-in."
+    
+    "I've got this. I’ve got this."
+
+    scene rivalzealot with dissolve:
+        align(0,0)
+            
+    "I bring my marines to his base and charge up the high ground with an SCV building a bunker on the low ground."
+
+    play sound "sfx/marinesfiring.ogg"
+    
+    "He retreats with his lone zealot and begins to chronoboost something out of his gateway-- likely a stalker. He still hasn’t pulled his probes so I start heading towards the mineral line."
+        
+    scene rivaldefends with dissolve:
+        align(0,0)
+
+    stop sound fadeout 1.0
+    
+    play sound "sfx/stalkerprobeattack.ogg"
+
+    "Oh no, this isn't good. He manages to get a surround with his zealot and probes."
+    
+    "He gets his first stalker out, he might actually hold this!"
+    
+    "I'm mashing my 'A' key furiously in hopes that I can salvage the situation, but it's too late. The single marine I manage to get into my bunker is useless at this point… From the high ground, he can destroy it with a single stalker."
+    
+    "I can't reinforce fast enough and my attack is routed. He completely outplayed me with his defense...even though he didn't scout me at all."
+    
+    "I have no other choice but to gg."
+
+    stop sound fadeout 1.0
+
+    window hide dissolve
+
+
+    ######### BACK TO PC CAFE
+
+
+    scene bg pcbang with dissolve:
+        align(0,0)
+        
+    stop music fadeout 2.0
+
+    play music "sfx/Warsong.mp3"
+
+    window show dissolve
+
+    "I don’t have long to sulk in defeat before the KeSPA player makes his way over to me with a smirk playing on his lips." 
+
+    show rival boastful at center with easeinright
+
+    unknown "Really? A two rax?"
+    
+    "There’s something incredibly infuriating about his grin. It’s difficult to be graceful in defeat, but I try my best anyway."
+    
+    m "I didn't play that well, but you definitely had an impressive defense. I haven’t practiced my proxies on that map--"
+    
+    unknown "But you wanted to score a cheap win, obviously. Seriously, I didn’t expect much from a foreigner… But you managed to disappoint anyway."
+    
+    "His grin darkens to one without humor. Wow, is this guy serious?"
+
+    m "What the hell is your problem?"
+
+    unknown "Everyone knows your type: the foreigner out to make a name for yourself. You aren’t the first and you probably won’t be the last."
+
+    unknown "Newsflash, kid. Your plane ticket doesn’t buy you the right to call yourself a professional gamer. You play like shit. Save your money and your time and go back home."
+
+    "I feel the heat rise in my face, half in anger and half in embarrassment. I’ve never dealt well with confrontation."
+
+    "Before I can say anything, Jett cuts between the two of us. eyes sharp on the KeSPA pro."
+
+    show jett angry at left with easeinleft
+
+    j "Back off, Bolt."
+
+    "He lets a harsh laugh out and takes a step forward."
+
+    r "Long time no see, Jett. Seems like life hasn’t treated you too well if you’re associating with trash like this."
+
+    "This so-called Bolt looks past her and gestures towards me. I put a foot forward to match his step, but Jett puts a hand on my chest to hold me back."
+
+    "The standoff lasts a moment longer before Bolt lets out a lazy shrug, instantly killing off the intensity in his expression."
+
+    r "Eh, I’ve got better things to do than offer advice to mouthy chobos. Do what you want."
+
+    hide rival boastful with dissolve
+
+    hide jett angry with dissolve
+
+    "He returns to his station and queues up a ladder game without a second look in our direction. Jett takes my arm in a vice and practically drags me away."
+    
+    show jett angry at center with easeinright
+
+    j "You've GOT to be kidding me, an all-in on that map?!"
+
+    "Even after a heated confrontation, she shows concern first in the match. I almost laugh."
+    
+    m "It was a metagame play."
+    
+    j "So your plan was to try a build so terrible that he wouldn’t think it was coming, huh?"
+
+    "Her banter helps defuse the tension from moments prior, though even as we chat about what I could have done better I can’t help but wonder how the two of them are acquainted."
+    
+    j "Come on. We've got a lot of work to do before you challenge someone like that again."
+    
+    return
+    
+label loseFastThird:
+
+    scene thirdflying with dissolve:
+        align(0,0)
+
+    "I cut marines long enough to save up for a quick third command center. It’s not long before I’m floating it over to the mineral line before my first medivac is even out."
+    
+    "Just as my CC is about to land a red blip shows up on my minimap. Is it an oracle?  I have missile turrets up, I should be fine."
+    
+    "Wait no...it's floating on the outskirts of my base.  A warp prism? My units are completely out of position!"
+    
+    scene rivalwarpprism with dissolve:
+        align(0,0)
+
+    play sound "sfx/stalkersattackscv.ogg"
+
+    "He starts warping in just outside of my static defenses. Zealots rush into my base and tear my mineral line to pieces before I can move units back to defend.  This is bad…"
+    
+    scene rivalfrontfalls with dissolve:
+        align(0,0)
+
+    stop sound fadeout 1.0
+        
+    play sound "sfx/stalkersattackfront.ogg"    
+
+    "Oh god, he's at my natural too?  He’s got such a big army! I can’t keep my defense up with my economy crippled…"
+    
+    "I have no choice but to gg here."
+
+    stop sound fadeout 1.0
+
+    window hide dissolve
+
+    ##### BACK TO PC CAFE
+
+    scene bg pcbang with dissolve:
+        align(0,0)
+        
+    stop music fadeout 2.0
+
+    play music "sfx/Warsong.mp3"
+
+    window show dissolve
+
+    "I don’t have long to sulk in defeat before the KeSPA player makes his way over to me with a smirk playing on his lips."
+
+    show rival boastful at center with easeinright
+
+    unknown "That was greedy."
+    
+    "There’s something incredibly infuriating about his grin. It’s difficult to be graceful in defeat, but I try my best anyway."
+    
+    m "I thought I could get away with it. Mid game against protoss has always given me trouble--"
+    
+    unknown "Did you even scout? Seriously, I didn’t expect much from a foreigner… But you managed to disappoint anyway."
+    
+    "His grin darkens to one without humor. Wow, is this guy serious? "
+
+    m "What the hell is your problem?"
+
+    unknown "Everyone knows your type: the foreigner out to make a name for yourself. You aren’t the first and you probably won’t be the last."
+
+    unknown "Newsflash, kid. Your plane ticket doesn’t buy you the right to call yourself a professional gamer. You play like shit. Save your money and your time and go back home."
+
+    "I feel the heat rise in my face, half in anger and half in embarrassment. I’ve never dealt well with confrontation."
+
+    "Before I can say anything, Jett cuts between the two of us. eyes sharp on the KeSPA pro."
+
+    show jett angry at left with easeinleft
+
+    j "Back off, Bolt."
+
+    "He lets a harsh laugh out and takes a step forward."
+
+    r "Long time no see, Jett. Seems like life hasn’t treated you too well if you’re associating with trash like this."
+
+    "This so-called Bolt looks past her and gestures towards me. I put a foot forward to match his step, but Jett puts a hand on my chest to hold me back."
+
+    "The standoff lasts a moment longer before Bolt lets out a lazy shrug, instantly killing off the intensity in his expression."
+
+    r "Eh, I’ve got better things to do than offer advice to mouthy chobos. Do what you want."
+
+    hide rival boastful with dissolve
+
+    hide jett angry with dissolve
+    
+    "He returns to his station and queues up a ladder game without a second look in our direction. Jett takes my arm in a vice and practically drags me away."
+    
+    show jett angry at center with easeinright
+
+    j "You've GOT to be kidding me, a blind third on one rax?!"
+
+    "Even after a heated confrontation, she shows concern first in the match. I almost laugh."
+    
+    m "I thought I could get away with it."
+    
+    j "Flipping coins isn’t what we’ve practiced. Besides, if you’re going to coinflip, you should play protoss."
+
+    "Her banter helps defuse the tension from moments prior, though even as we chat about what I could have done better I can’t help but wonder how the two of them are acquainted."
+    
+    j "Come on...we've got a lot of work to do before you challenge someone like that again."
+
+    return
+    
+label winDropPlay:
+    "Medivac drop play is a defining characteristic of a top tier Terran player.  If I win with this, it's a good indication that I can stand toe-to-toe with the top players in Korea."
+    
+    "It's time to put my practice to work.  I starting rallying my bio forces as the first dropship finishes."
+
+    scene rivalmedivac with dissolve:
+        align(0,0)
+
+    "As my units load up, I shift click my dropships across the map.  It's imperative he doesn't see me move out, so I make sure the watch towers are clear and avoid common places where Protoss leaves their observers."
+    
+    scene rivaldropped with dissolve:
+        align(0,0)
+
+    play sound "sfx/dropfiring.ogg" fadeout 2.0    
+
+    "My dropships are in the clear, and I boost into his base.  He's completely unprepared as I unload all my units and stim into snipe his production buildings."
+    
+    "SICK! I snipe a huge amount of production buildings and a robotics bay.  That set him back a ton."
+        
+    "I'm amazed at how well the game is going. I’m two steps ahead of this guy at every turn."
+    
+    scene rivallose with dissolve:
+        align(0,0)
+
+    stop sound fadeout 1.0
+    
+    play sound "sfx/finalbattle.ogg" fadeout 2.0    
+
+    "He's too busy defending to get a decent standing army, and when I roll in with my amassed units..."
+    
+    "Is this actually happening?  Am I about to take a game off a KeSPA pro?"
+    
+    "...I did it.  He gg'd." 
+
+    stop sound fadeout 1.0
+
+    window hide dissolve
+
+
+    ###BACK TO PC CAFE:
+
+    scene bg pcbang
+
+    stop music fadeout 1.0
+
+    stop sound fadeout 1.0
+    
+    play music "music/bluepine.mp3"
+        
+    scene bg pcbang with dissolve
+
+    window show dissolve
+
+    "I sit in silent disbelief at the victory screen splashed across my monitor. Luckily, I snap out of my daze long enough to save the replay and email it to myself."
+    
+    "My opponent walks over, visibly frazzled."
+
+    show rival surprised at center with easeinright
+    
+    unknown "Dang. Not bad."
+    
+    m "... Uh, good game?"
+
+    hide rival with dissolve
+
+    show rival boastful at center with dissolve
+    
+    unknown "Sure, good game. But keep in mind that this isn’t the game I play professionally-- yet, anyway."
+    
+    m "Wait, really? What are you--"
+    
+    unknown "Brood War, obviously. Still, I’m a man of the people. I don't mind doing fan games once in a while, even if it’s in a game I play once every two weeks."
+    
+    m "Keep the excuses coming. I still beat you."
+    
+    unknown "Uh huh. One game, outside of a tournament. Hold onto that win dearly, cuz it’s all you’re gonna get from me. Later, shitter."
+    
+    hide rival boastful with dissolve
+
+    "He thumbs his nose at me and heads back to his station. A second later, Jett’s pounding on my shoulder with her fist."
+    
+    m "Ow. Stop."
+
+    show jett neutral at center with easeinright
+
+    j "Did you seriously just beat Bolt? Not bad, Mach."
+    
+    m "Bolt, huh? And all I did was follow your advice."
+    
+    j "See? Practice pays off. Don't get content though, we still have a lot of work to do before the qualifier."
+    
+    m "He did his best to make excuses after losing. Said he barely plays Starcraft 2."
+
+    j "Yeah, well. He’s not lying. Brood War practice hours are rough. Still, a win’s a win. C’mon."
+    
+    "She gestures for me to return to my PC. A little celebration would have been nice, but Jett isn’t really the type to dole out tons of congratulation."
+
+    "Even though Bolt seems like a total prick, he wasn’t wrong. One win at a PC cafe isn’t going to get me past the next qualifier."
+
+    window hide dissolve
+
+    return
+    
+    
+    
+
